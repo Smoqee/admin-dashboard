@@ -62,10 +62,6 @@ li {
     font-size: 18px;
 }
 
-li img {
-    height: 25px;
-}
-
 nav a {
     display: grid;
     grid-auto-flow: column;
@@ -74,6 +70,11 @@ nav a {
     gap: 25px;
     text-decoration: none;
     color: inherit;
+}
+
+nav li a:hover {
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .header {
@@ -108,6 +109,11 @@ input {
     border-style: none;
     border-radius: 20px;
     background-color: var(--background-color-behind);
+    padding-left: 22px;
+}
+
+input:focus {
+    outline-color: var(--main-color);
 }
 
 .profile {
@@ -162,6 +168,13 @@ button {
     font-size: 14px;
 }
 
+button:hover {
+    background-color: white;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
 .main-content {
     padding: 25px 35px 5px 20px;
     grid-row: 2 / 3;
@@ -186,7 +199,7 @@ h4 {
 .project-field ul {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(2, minmax(400px, 600px));
+    grid-template-columns: repeat(2, minmax(200px, 600px));
 }
 
 .project-field li {
@@ -281,6 +294,23 @@ h5 {
     width: 45px;
     background-color: #c0efff;
     border-radius: 50%;
+}
+
+.yellow {
+    background-color: #ffd94e;
+}
+
+.green {
+    background-color: #70ffa2;
+}
+
+.purple {
+    background-color: #b26aff;
+}
+
+.trending ul li:hover {
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.111);
+    border-radius: 20px;
 }
 
 p {
